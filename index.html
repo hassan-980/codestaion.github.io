@@ -1,13 +1,162 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Josefin+Sans:wght@600&family=Lilita+One&display=swap"
+        rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Zilla+Slab:ital,wght@1,600&display=swap" rel="stylesheet">
+    <link rel="shortcut icon" href="/IMG/codeStationlogo.png" type="image/x-icon">
+    <link rel="stylesheet" href="style.css">
+    <title>Codestation</title>
 </head>
+
 <body>
-    <h1>HELLO WORLD</h1>
-    
+    <header id="nav">
+        <div class="navbtns">
+            <button id="nav-btn" onclick="openNav()">=</button>
+            <button id="nav-cls" onclick="closeNav()">x</button>
+        </div>
+
+
+        <div id="side-logo">
+            <a href="">
+                <div class="logo-img"><img src="IMG/codestationtext.png" alt=""></div>
+            </a>
+        </div>
+        <div id="navbar">
+            <ul>
+                <li><a href="#active">HOME</a></li>
+                <li><a href="#services">SERVICES</a></li>
+                <li><a href="#blog">BLOG</a></li>
+                <li><a href="#about">ABOUT</a></li>
+                <li><a href="#contact">CONTACT US</a></li>
+            </ul>
+        </div>
+
+
+
+        <!-- <div class="navbar">
+            <a class="active" herf="#">Home</a>
+            <a href="https://github.com/tushar19jain">Github</a>
+            <a href="https://www.youtube.com/channel/UCB_50ZRW6wGva9icWlZaBdg">Youtube</a>
+            <a href="https://www.instagram.com/_tushar__.25/?utm_medium=copy_lin">Instagram</a>
+        </div><br>
+        <button id="nav-btn" onclick="openNav()">=</button>
+        <button id="nav-cls" onclick="closeNav()">x</button>
+        <div id="sidenav">
+            <a href="https://github.com/tushar19jain">Github</a>
+            <a href="https://www.youtube.com/channel/UCB_50ZRW6wGva9icWlZaBdg">Youtube</a>
+            <a href="https://www.instagram.com/_tushar__.25/?utm_medium=copy_lin">Instagram</a>
+        </div> -->
+
+
+    </header>
+
+    <section id="home">
+        <div class="text">
+            <p id="weltxt">welcome to,</p>
+            <h1 id="bigtxt">CODE<script src="https://cdn.lordicon.com/qjzruarw.js"></script>
+                <lord-icon
+                    src="https://cdn.lordicon.com/qkmmvfdj.json"
+                    trigger="loop"
+                    colors="primary:#4be1ec,secondary:#cb5eee"
+                    stroke="75"
+                    style="width:100px;height:100px">
+                </lord-icon></h1>
+            <h1 id="bigtxt">STATION
+                </lord-icon></h1>
+        </div>
+    </section>
+
+
+
+    <section id="services">
+        <div class="row">
+            <h2 class="section-heading">Our Services</h2>
+        </div>
+        <div class="row">
+            <div class="column">
+                <div class="card">
+                    <div class="icon-wrapper">
+                        <i class="fas fa-hammer"></i>
+                    </div>
+                    <h3>Service Heading</h3>
+                    <p>
+                        Lorem ipsum dolor, sit amet consectetur adipisicing elit. Quisquam
+                        consequatur necessitatibus eaque.
+                    </p>
+                </div>
+            </div>
+            <div class="column">
+                <div class="card">
+                    <div class="icon-wrapper">
+                        <i class="fas fa-brush"></i>
+                    </div>
+                    <h3>Service Heading</h3>
+                    <p>
+                        Lorem ipsum dolor, sit amet consectetur adipisicing elit. Quisquam
+                        consequatur necessitatibus eaque.
+                    </p>
+                </div>
+            </div>
+            <div class="column">
+                <div class="card">
+                    <div class="icon-wrapper">
+                        <i class="fas fa-wrench"></i>
+                    </div>
+                    <h3>Service Heading</h3>
+                    <p>
+                        Lorem ipsum dolor, sit amet consectetur adipisicing elit. Quisquam
+                        consequatur necessitatibus eaque.
+                    </p>
+                </div>
+            </div>
+            <div class="column">
+                <div class="card">
+                    <div class="icon-wrapper">
+                        <i class="fas fa-truck-pickup"></i>
+                    </div>
+                    <h3>Service Heading</h3>
+                    <p>
+                        Lorem ipsum dolor, sit amet consectetur adipisicing elit. Quisquam
+                        consequatur necessitatibus eaque.
+                    </p>
+                </div>
+            </div>
+            <div class="column">
+                <div class="card">
+                    <div class="icon-wrapper">
+                        <i class="fas fa-broom"></i>
+                    </div>
+                    <h3>Service Heading</h3>
+                    <p>
+                        Lorem ipsum dolor, sit amet consectetur adipisicing elit. Quisquam
+                        consequatur necessitatibus eaque.
+                    </p>
+                </div>
+            </div>
+            <div class="column">
+                <div class="card">
+                    <div class="icon-wrapper">
+                        <i class="fas fa-plug"></i>
+                    </div>
+                    <h3>Service Heading</h3>
+                    <p>
+                        Lorem ipsum dolor, sit amet consectetur adipisicing elit. Quisquam
+                        consequatur necessitatibus eaque.
+                    </p>
+                </div>
+            </div>
+        </div>
+    </section>
+    <script src="script.js"></script>
 </body>
+
 </html>
