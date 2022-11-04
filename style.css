@@ -61,7 +61,7 @@ html {
 #side-logo img {
     position: absolute;
     width: 150px;
-    padding: 5px 15px;
+    padding: 5px 23px;
     top: 3px;
 
 }
@@ -178,7 +178,7 @@ html {
     place-items: center;
 }
 
-.section-heading {
+#section-heading {
     color: white;
     font-size: 60px;
 }
@@ -200,7 +200,7 @@ html {
 .card {
     width: 100%;
     height: 100%;
-    padding: 2em 1.5em;
+    padding: 10px;
     background: linear-gradient(#ffffff 50%, #2c7bfe 50%);
     background-size: 100% 200%;
     background-position: 0 2.5%;
@@ -291,6 +291,11 @@ p {
     .navbtns{
         display: block;
     
+    }
+    #section-heading {
+        color: white;
+        font-size: 40px;
+        padding: 10px;
     }
 
     #side-logo {
