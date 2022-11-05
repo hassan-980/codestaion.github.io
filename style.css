@@ -534,7 +534,13 @@ hr {
 
     #res-contact-logo {
         display: block;
-        height: 137px;
+
+    }
+
+    #res-logo{
+        list-style: none;
+        padding: 10px;
+
     }
 
     #contact-logo {
