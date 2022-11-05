@@ -14,15 +14,13 @@ html {
 
 #nav {
     display: flex;
-    /* justify-items: center;
-    align-items: center;
-    text-align: center; */
-    position: sticky;
+    position: relative;
     top: 0px;
     height: 50px;
+    transition: all 0.5s ease-out;
 }
 
-#nav ul {
+#navbar ul {
     display: flex;
     padding: 13px;
 }
@@ -37,14 +35,14 @@ html {
 
 }
 
-#nav ul li {
+#navbar ul li {
     display: flex;
     list-style: none;
     width: 132px;
     height: 25px;
 }
 
-#nav ul li a {
+#navbar ul li a {
     margin: auto;
     text-decoration: none;
     color: white;
@@ -53,7 +51,7 @@ html {
 
 }
 
-#nav ul li a:hover {
+#navbar ul li a:hover {
     text-decoration: underline;
     color: white;
     text-decoration-color: darkorchid;
@@ -83,7 +81,7 @@ html {
 }
 
 #nav-btn {
-    display: none;
+    display:none;
     background: transparent;
     border: 0px;
     padding: 3px;
@@ -100,8 +98,60 @@ html {
     cursor: pointer;
     color: white;
     font-size: 50px;
+}
+
+#btn-nav ul li a:hover {
+    text-decoration: underline;
+    color: white;
+    text-decoration-color: darkorchid;
+    text-decoration-thickness: 3px;
+    font-size: 22px;
+}
+
+
+
+
+
+
+
+
+
+
+
+#btn-nav a{
+    color: white;
+    text-decoration: none;
+    margin: auto;
+    font-size: 19px;
+    font-family: 'IBM Plex Mono', monospace;
 
 }
+
+#btn-nav li{
+    padding: 5px;
+}
+#btn-nav{
+    display: none;
+    padding-top: 60px;
+    margin: auto;
+
+}
+
+#btn-nav ul li {
+    display: flex;
+    list-style: none;
+    width: 132px;
+    height: 25px;
+}
+ 
+
+
+
+
+
+
+
+
 
 
 .text {
@@ -167,13 +217,6 @@ html {
     z-index: -1;
     opacity: 0.2;
 }
-
-
-
-
-
-
-
 
 
 #services {
@@ -296,7 +339,7 @@ hr {
     width: 100px;
 }
 
-#foot-links{
+#foot-links {
     margin: auto;
 }
 
@@ -306,6 +349,7 @@ hr {
     width: 180px;
     height: 144px;
 }
+
 #foot-links ul li a {
     text-decoration: none;
     font-size: 20px;
@@ -313,9 +357,11 @@ hr {
     margin: auto;
 
 }
-#footlogo p{
+
+#footlogo p {
     color: white;
 }
+
 #foot-links ul {
     display: flex;
     margin: auto;
@@ -323,13 +369,13 @@ hr {
     width: 700px;
 }
 
-#res-foot-links{
-    display: none;
-}
-#res-contact-logo{
+#res-foot-links {
     display: none;
 }
 
+#res-contact-logo {
+    display: none;
+}
 
 
 
@@ -342,7 +388,8 @@ hr {
 
 
 
-                            /* MEDIA  QUERIES */
+
+/* MEDIA  QUERIES */
 
 
 
@@ -377,6 +424,7 @@ hr {
 
     .navbtns {
         display: block;
+        width: 42px;
 
     }
 
@@ -440,55 +488,57 @@ hr {
 
 
 
-                        /* res-foot-links */
+    /* res-foot-links */
 
 
 
-    #foot-links{
+    #foot-links {
         display: none;
     }
 
 
 
-    #res-foot-links{
+    #res-foot-links {
         margin: auto;
         display: block;
     }
-    
+
     #res-foot-links ul li {
         list-style: none;
         display: flex;
         width: 100px;
         height: 66px;
     }
+
     #res-foot-links ul li a {
         text-decoration: none;
         font-size: 20px;
         color: white;
         margin: auto;
-    
+
     }
 
     #res-foot-links ul {
         display: flex;
         margin: auto;
         padding: 10px;
-        width: 313px;
+        width:  298px;;
     }
+
     #contact-txt {
         padding: 10px;
         font-size: 33px;
 
     }
 
-
-    #res-contact-logo{
+    #res-contact-logo {
         display: block;
+        height: 80px;
     }
 
-    #contact-logo{
+    #contact-logo {
         display: none;
     }
 
-    
+
 }
