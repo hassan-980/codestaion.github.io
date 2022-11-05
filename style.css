@@ -311,7 +311,7 @@ p {
 
 footer {
     color: white;
-    display: flex;
+    display: block;
     flex-direction: column;
     text-align: center;
 }
