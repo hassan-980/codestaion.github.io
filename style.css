@@ -14,9 +14,9 @@ html {
 
 #nav {
     display: flex;
-    justify-items: center;
+    /* justify-items: center;
     align-items: center;
-    text-align: center;
+    text-align: center; */
     position: sticky;
     top: 0px;
     height: 50px;
@@ -31,22 +31,26 @@ html {
     margin: auto;
 }
 
-.navbtns{
+.navbtns {
     display: none;
     width: 25px;
 
 }
-#nav ul li {
-    list-style: none;
-    padding: 1px 30px;
 
+#nav ul li {
+    display: flex;
+    list-style: none;
+    width: 132px;
+    height: 25px;
 }
 
 #nav ul li a {
+    margin: auto;
     text-decoration: none;
     color: white;
     font-size: 19px;
-    font-family: 'Zilla Slab', serif;
+    font-family: 'IBM Plex Mono', monospace;
+
 }
 
 #nav ul li a:hover {
@@ -54,7 +58,7 @@ html {
     color: white;
     text-decoration-color: darkorchid;
     text-decoration-thickness: 3px;
-    font-size: 20px;
+    font-size: 22px;
 }
 
 
@@ -78,20 +82,20 @@ html {
     opacity: 0.2;
 }
 
-#nav-btn{
-    display:none;
+#nav-btn {
+    display: none;
     background: transparent;
-    border:0px ;
+    border: 0px;
     padding: 3px;
     cursor: pointer;
     color: white;
     font-size: 50px;
 }
 
-#nav-cls{
+#nav-cls {
     display: none;
     background: transparent;
-    border:0px ;
+    border: 0px;
     padding: 3px;
     cursor: pointer;
     color: white;
@@ -145,7 +149,7 @@ html {
     display: flex;
     flex-direction: column;
     padding: 3px 200px;
-    height: 450px;
+    height: 500px;
     justify-content: center;
     align-items: center;
     padding-left: 15px;
@@ -173,14 +177,18 @@ html {
 
 
 #services {
-    height: 100vh;
+    height: 1007px;
     display: grid;
     place-items: center;
 }
 
 #section-heading {
+    font-family: 'IBM Plex Mono', monospace;
+    padding: 25px;
     color: white;
     font-size: 60px;
+    text-align: center;
+
 }
 
 .row {
@@ -195,22 +203,23 @@ html {
     text-align: center;
     justify-content: center;
     margin: auto;
+    padding: 25px;
 }
 
 .card {
     width: 100%;
     height: 100%;
-    padding: 10px;
-    background: linear-gradient(#ffffff 50%, #2c7bfe 50%);
+    padding: 30px;
+    background: linear-gradient(#ffffff 50%, #0849b1 50%);
     background-size: 100% 200%;
     background-position: 0 2.5%;
     border-radius: 5px;
-    box-shadow: 0 0 35px rgba(0, 0, 0, 0.12);
+    /* box-shadow: 0 0 35px rgba(0, 0, 0, 0.12); */
     cursor: pointer;
     transition: 0.5s;
 }
 
-h3 {
+.column h3 {
     font-size: 20px;
     font-weight: 600;
     color: #1f194c;
@@ -231,9 +240,9 @@ p {
     font-size: 30px;
     height: 2.5em;
     width: 2.5em;
-    color: #ffffff;
+    /* color: #ffffff; */
     border-radius: 50%;
-    display: grid;
+    /* display: grid; */
     place-items: center;
     transition: 0.5s;
 }
@@ -244,7 +253,7 @@ p {
 
 .card:hover .icon-wrapper {
     background-color: #ffffff;
-    color: #2c7bfe;
+    /* color: #2c7bfe; */
 }
 
 .card:hover h3 {
@@ -254,6 +263,88 @@ p {
 .card:hover p {
     color: #f0f0f0;
 }
+
+
+footer {
+    color: white;
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+}
+
+#contact-txt {
+    color: linear(65.7deg, #FC5FD9 9.76%, #A481EF 40.43%, #8D5DF5 87.38%);
+    font-size: 60px;
+    font-family: 'IBM Plex Mono', monospace;
+}
+
+.pad-side-foot {
+    padding-left: 30px;
+    padding-right: 30px;
+}
+
+
+hr {
+    padding: 3px;
+    background: linear-gradient(to right, #e832c0, #9215b8, #55b1e2, #1bc420, #836cb5, #e8812d);
+    border: none;
+
+}
+
+
+#footlogo img {
+    width: 100px;
+}
+
+#foot-links{
+    margin: auto;
+}
+
+#foot-links ul li {
+    list-style: none;
+    display: flex;
+    width: 180px;
+    height: 144px;
+}
+#foot-links ul li a {
+    text-decoration: none;
+    font-size: 20px;
+    color: white;
+    margin: auto;
+
+}
+#footlogo p{
+    color: white;
+}
+#foot-links ul {
+    display: flex;
+    margin: auto;
+    padding: 10px;
+    width: 700px;
+}
+
+#res-foot-links{
+    display: none;
+}
+#res-contact-logo{
+    display: none;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+                            /* MEDIA  QUERIES */
+
+
 
 @media screen and (min-width: 768px) {
     section {
@@ -278,28 +369,24 @@ p {
 }
 
 
-
-
-
-
-
 @media only screen and (max-width: 600px) {
 
     #navbar {
         display: none;
     }
-    .navbtns{
+
+    .navbtns {
         display: block;
-    
+
     }
+
     #section-heading {
         color: white;
         font-size: 40px;
         padding: 10px;
     }
 
-    #side-logo {
-    }
+    #side-logo {}
 
     #nav-btn {
         display: block;
@@ -314,27 +401,33 @@ p {
         display: none;
         font-size: 40px;
         color: white;
-        background:transparent;
+        background: transparent;
         padding: 0px 15px;
         padding-bottom: 5px;
 
     }
+
     #bigtxt {
         font-size: 74px;
     }
-    #weltxt{
+
+    #weltxt {
         font-size: 40px;
     }
 
-#services {
-    width: 337px;
-    place-items: center;
-}
+    #services {
+        width: 300px;
+        height: 2058px;
+        display: grid;
+        place-items: center;
 
-#home {
+    }
 
-    height: 450px;
-}
+    #home {
+
+        height: 450px;
+    }
+
     #sidenav a {
         font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
         padding: 8px 8px 8px 32px;
@@ -343,5 +436,59 @@ p {
         color: #5f5d5d;
         display: block;
         transition: 0.5s;
-    } 
-} 
+    }
+
+
+
+                        /* res-foot-links */
+
+
+
+    #foot-links{
+        display: none;
+    }
+
+
+
+    #res-foot-links{
+        margin: auto;
+        display: block;
+    }
+    
+    #res-foot-links ul li {
+        list-style: none;
+        display: flex;
+        width: 100px;
+        height: 66px;
+    }
+    #res-foot-links ul li a {
+        text-decoration: none;
+        font-size: 20px;
+        color: white;
+        margin: auto;
+    
+    }
+
+    #res-foot-links ul {
+        display: flex;
+        margin: auto;
+        padding: 10px;
+        width: 313px;
+    }
+    #contact-txt {
+        padding: 10px;
+        font-size: 33px;
+
+    }
+
+
+    #res-contact-logo{
+        display: block;
+    }
+
+    #contact-logo{
+        display: none;
+    }
+
+    
+}
