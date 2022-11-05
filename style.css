@@ -218,11 +218,28 @@ html {
     opacity: 0.2;
 }
 
-
 #services {
     height: 1007px;
     display: grid;
     place-items: center;
+}
+#services-text{
+    /* margin: auto; */
+    display: block;
+    padding-left: 20px;
+    padding-right: 20px;
+}
+
+#services-logo {
+    display: flex;
+    margin: auto;
+    justify-content: center;
+}
+#res-services-logo {
+    display: flex;
+    margin: auto;
+    justify-content: center;
+    padding-bottom: 25px;
 }
 
 #section-heading {
@@ -231,7 +248,6 @@ html {
     color: white;
     font-size: 60px;
     text-align: center;
-
 }
 
 .row {
@@ -378,6 +394,11 @@ hr {
     display: none;
 }
 
+/* #res-services-logo{
+    display: none;
+
+} */
+
 
 
 
@@ -464,13 +485,15 @@ hr {
         font-size: 40px;
     }
 
+
     #services {
         width: 300px;
-        height: 2058px;
+        height: 1919px;
         display: grid;
         place-items: center;
 
     }
+
 
     #home {
 
@@ -485,6 +508,14 @@ hr {
         color: #5f5d5d;
         display: block;
         transition: 0.5s;
+    }
+
+    #services-logo{
+        display: none;
+    }
+
+    #res-services-logo{
+    display:flex;
     }
 
 
