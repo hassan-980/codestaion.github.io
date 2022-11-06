@@ -17,7 +17,10 @@
     <title>Codestation</title>
 </head>
 
+
 <body>
+
+
     <header id="nav">
         <div class="navbtns">
             <button id="nav-btn" onclick="openNav()">=</button>
@@ -28,6 +31,7 @@
         <div id="side-logo">
             <div class="logo-img"><img src="IMG/codestationtext.png" alt=""></div>
         </div>
+
         <div id="navbar">
             <ul>
                 <li><a href="">HOME</a></li>
@@ -40,32 +44,22 @@
 
         <div id="btn-nav">
             <ul>
-                <li><a href="">HOME</a></li>
-                <li><a href="#services-text">SERVICES</a></li>
-                <li><a href="#blog">BLOG</a></li>
-                <li><a href="#about">ABOUT</a></li>
-                <li><a href="#contact">CONTACT US</a></li>
+                <li><a onclick= "closenavbar()" href="">HOME</a></li>
+                <li><a onclick="closenavbar()" href="#services-text">SERVICES</a></li>
+                <li><a onclick="closenavbar()" href="#blog">BLOG</a></li>
+                <li><a onclick= "closenavbar()" href="#about">ABOUT</a></li>
+                <li><a onclick="closenavbar()" href="#contact">CONTACT US</a></li>
             </ul>
         </div>
 
 
 
-        <!-- <div class="navbar">
-            <a class="active" herf="#">Home</a>
-            <a href="https://github.com/tushar19jain">Github</a>
-            <a href="https://www.youtube.com/channel/UCB_50ZRW6wGva9icWlZaBdg">Youtube</a>
-            <a href="https://www.instagram.com/_tushar__.25/?utm_medium=copy_lin">Instagram</a>
-        </div><br>
-        <button id="nav-btn" onclick="openNav()">=</button>
-        <button id="nav-cls" onclick="closeNav()">x</button>
-        <div id="sidenav">
-            <a href="https://github.com/tushar19jain">Github</a>
-            <a href="https://www.youtube.com/channel/UCB_50ZRW6wGva9icWlZaBdg">Youtube</a>
-            <a href="https://www.instagram.com/_tushar__.25/?utm_medium=copy_lin">Instagram</a>
-        </div> -->
-
-
     </header>
+    <div id="scroll-indicator-container">
+        <div class="scroll-indicator-bar"></div>
+    </div>
+
+
 
     <section id="home">
         <div class="text">
@@ -96,7 +90,7 @@
             <lord-icon src="https://cdn.lordicon.com/twprnhsj.json" trigger="loop" delay="500"
                 colors="primary:#4be1ec,secondary:#cb5eee" stroke="85" style="width:100px;height:100px">
             </lord-icon>
-            </div>
+        </div>
         <hr>
     </div>
     <section id="services">

@@ -14,7 +14,7 @@ html {
 
 #nav {
     display: flex;
-    position: relative;
+    position: sticky;
     top: 0px;
     height: 50px;
     transition: all 0.5s ease-out;
@@ -81,7 +81,7 @@ html {
 }
 
 #nav-btn {
-    display:none;
+    display: none;
     background: transparent;
     border: 0px;
     padding: 3px;
@@ -118,7 +118,7 @@ html {
 
 
 
-#btn-nav a{
+#btn-nav a {
     color: white;
     text-decoration: none;
     margin: auto;
@@ -127,10 +127,11 @@ html {
 
 }
 
-#btn-nav li{
+#btn-nav li {
     padding: 5px;
 }
-#btn-nav{
+
+#btn-nav {
     display: none;
     padding-top: 33px;
     margin: auto;
@@ -143,7 +144,7 @@ html {
     width: 145px;
     height: 30px;
 }
- 
+
 
 
 
@@ -163,8 +164,6 @@ html {
     background-size: 400%;
     animation: gradient 5s linear infinite alternate;
     font-family: 'Josefin Sans', sans-serif;
-
-
 }
 
 .text h1 {
@@ -223,7 +222,8 @@ html {
     display: grid;
     place-items: center;
 }
-#services-text{
+
+#services-text {
     /* margin: auto; */
     display: block;
     padding-left: 20px;
@@ -235,6 +235,7 @@ html {
     margin: auto;
     justify-content: center;
 }
+
 #res-services-logo {
     display: flex;
     margin: auto;
@@ -377,6 +378,7 @@ hr {
 
 #footlogo p {
     color: white;
+    font-family: 'Josefin Sans', sans-serif;
 }
 
 #foot-links ul {
@@ -394,19 +396,82 @@ hr {
     display: none;
 }
 
-#res-services-logo{
+#res-services-logo {
     display: none;
 
 }
 
-#foot-text{
+#foot-text {
     padding-bottom: 20px;
 }
-#foot-text p{
+
+#foot-text p {
     color: white;
     font-size: 20px;
+    font-family: 'Josefin Sans', sans-serif;
 
 }
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/*======= Scroll bar =======*/
+::-webkit-scrollbar {
+    background: #fff;
+    width: 11px;
+    border-radius: 2em;
+}
+
+::-webkit-scrollbar-thumb {
+    background: #282f4e;
+    width: 100%;
+    border-radius: 2em;
+}
+
+::-webkit-scrollbar-thumb:hover {
+    background: #454f6d;
+}
+
+/*======= Scroll indicator bar =======*/
+#scroll-indicator-container {
+    width: 100%;
+    height: 5px;
+    position: sticky;
+    top:50px;
+
+}
+
+
+
+.scroll-indicator-bar {
+    background: #199fff;
+    width: 0%;
+    height: 100%;
+    box-shadow: 0 5px 25px #199fff,
+        0 5px 50px #199fff;
+}
+
+
+
+
+
+
+
+
+
+
 
 
 
@@ -463,7 +528,7 @@ hr {
         padding: 10px;
     }
 
-   
+
 
     #nav-btn {
         display: block;
@@ -517,15 +582,15 @@ hr {
         transition: 0.5s;
     }
 
-    #services-logo{
+    #services-logo {
         display: none;
     }
 
-    #res-services-logo{
-    display:flex;
+    #res-services-logo {
+        display: flex;
     }
 
-    #block{
+    #block {
         display: block;
         height: 130px;
     }
@@ -566,7 +631,8 @@ hr {
         display: flex;
         margin: auto;
         padding: 10px;
-        width:  298px;;
+        width: 298px;
+        ;
     }
 
     #contact-txt {
@@ -580,7 +646,7 @@ hr {
 
     }
 
-    #res-logo{
+    #res-logo {
         list-style: none;
         padding: 10px;
 
@@ -589,12 +655,13 @@ hr {
     #contact-logo {
         display: none;
     }
-    #foot-text p{
+
+    #foot-text p {
         color: white;
         font-size: 12px;
-    
+
     }
-    
+
 
 
 }
