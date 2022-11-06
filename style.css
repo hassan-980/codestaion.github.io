@@ -154,7 +154,6 @@ html {
 
 
 
-
 .text {
     background: radial-gradient(circle, #c13765 0%, #ad59bc 20%, #6ed6e4 40%, #2fad33 60%, #492390 100%);
     /* background: radial-gradient(circle,  #ff4ed9, #ff2cd1, #c123cf, #a61be5, #8c21ff, #a827ff, #e43cf3, #ff3fd5, #ff48d7); */
@@ -226,8 +225,8 @@ html {
 #services-text {
     /* margin: auto; */
     display: block;
-    padding-left: 20px;
-    padding-right: 20px;
+    padding-left: 30px;
+    padding-right: 30px;
 }
 
 #services-logo {
@@ -349,6 +348,7 @@ hr {
     padding: 3px;
     background: linear-gradient(to right, #e832c0, #9215b8, #55b1e2, #1bc420, #836cb5, #e8812d);
     border: none;
+    border-radius: 5px;
 
 }
 
