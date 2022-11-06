@@ -518,6 +518,11 @@ hr {
     display:flex;
     }
 
+    #block{
+        display: block;
+        height: 130px;
+    }
+
 
 
     /* res-foot-links */
