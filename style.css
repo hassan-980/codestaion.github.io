@@ -394,12 +394,19 @@ hr {
     display: none;
 }
 
-/* #res-services-logo{
+#res-services-logo{
     display: none;
 
-} */
+}
 
+#foot-text{
+    padding-bottom: 20px;
+}
+#foot-text p{
+    color: white;
+    font-size: 20px;
 
+}
 
 
 
@@ -456,7 +463,7 @@ hr {
         padding: 10px;
     }
 
-    #side-logo {}
+   
 
     #nav-btn {
         display: block;
@@ -582,6 +589,12 @@ hr {
     #contact-logo {
         display: none;
     }
+    #foot-text p{
+        color: white;
+        font-size: 12px;
+    
+    }
+    
 
 
 }
