@@ -118,6 +118,148 @@ html {
 
 
 
+
+
+
+
+
+#slider {
+    width: 800px;
+    height: 500px;
+    border-radius: 20px;
+    overflow: hidden;
+    margin: auto;
+    box-shadow: #1bc420 2px;
+}
+
+#slides {
+    width: 500%;
+    height: 500px;
+    display: flex;
+}
+
+#slides input {
+    display: none;
+ 
+}
+
+.slide {
+    width: 20%;
+    transition: 2s;
+}
+
+.slide img {
+    width: 800px;
+    height: 500px;
+}
+
+/*css for manual slide navigation*/
+
+#navigation-manual {
+    position: absolute;
+    width: 800px;
+    margin-top: -40px;
+    display: flex;
+    justify-content: center;
+}
+
+.manual-btn {
+    border: 2px solid #40D3DC;
+    padding: 5px;
+    border-radius: 10px;
+    cursor: pointer;
+    transition: 1s;
+}
+
+.manual-btn:not(:last-child) {
+    margin-right: 40px;
+}
+
+.manual-btn:hover {
+    background: #40D3DC;
+}
+
+#radio1:checked~.first {
+    margin-left: 0;
+}
+
+#radio2:checked~.first {
+    margin-left: -20%;
+}
+
+#radio3:checked~.first {
+    margin-left: -40%;
+}
+
+#radio4:checked~.first {
+    margin-left: -60%;
+}
+
+/*css for automatic navigation*/
+
+#navigation-auto {
+    position: absolute;
+    display: flex;
+    width: 800px;
+    justify-content: center;
+    margin-top: 460px;
+}
+
+#navigation-auto div {
+    border: 2px solid #40D3DC;
+    padding: 5px;
+    border-radius: 10px;
+    transition: 1s;
+}
+
+#navigation-auto div:not(:last-child) {
+    margin-right: 40px;
+}
+
+#radio1:checked~.navigation-auto .auto-btn1 {
+    background: #40D3DC;
+}
+
+#radio2:checked~.navigation-auto .auto-btn2 {
+    background: #40D3DC;
+}
+
+#radio3:checked~.navigation-auto .auto-btn3 {
+    background: #40D3DC;
+}
+
+#radio4:checked~.navigation-auto .auto-btn4 {
+    background: #40D3DC;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 #btn-nav a {
     color: white;
     text-decoration: none;
@@ -413,7 +555,18 @@ hr {
 }
 
 
+#contact::before {
+    content: "";
+    background: url('IMG/bg22.jpg') no-repeat center center/cover;
+    position: absolute;
+    top: 2325px;
+    left: 0px;
+    height: 100%;
+    width: 100%;
+    z-index: -1;
+    opacity: 0.3;
 
+}
 
 
 
@@ -449,7 +602,7 @@ hr {
     width: 100%;
     height: 5px;
     position: sticky;
-    top:50px;
+    top: 50px;
 
 }
 
@@ -526,6 +679,7 @@ hr {
         color: white;
         font-size: 40px;
         padding: 10px;
+        padding-top: 50px;
     }
 
 
@@ -557,6 +711,36 @@ hr {
         font-size: 40px;
     }
 
+    #slider {
+        width: 330px;
+        height: 205px;
+    }
+    #navigation-manual {
+        margin-top: -315px;
+        width: 330px;
+    }
+
+
+
+    #contact::before {
+       
+        top: 2910px;}
+
+    #navigation-auto {
+        width: 330px;
+        margin-top: 185px;
+    }
+
+    /* #slider{
+        padding-top: 100px;
+        padding-bottom: 40px;
+        border-radius: 40px;
+    } */
+    .slide img {
+        width: 350px;
+        height: 205px;
+    }
+
 
     #services {
         width: 300px;
@@ -569,7 +753,7 @@ hr {
 
     #home {
 
-        height: 450px;
+        height: 520px;
     }
 
     #sidenav a {
