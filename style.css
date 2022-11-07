@@ -238,28 +238,6 @@ html {
 
 
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 #btn-nav a {
     color: white;
     text-decoration: none;
@@ -559,7 +537,8 @@ hr {
     content: "";
     background: url('IMG/bg22.jpg') no-repeat center center/cover;
     position: absolute;
-    top: 2325px;
+    top: 2325
+    px;
     left: 0px;
     height: 100%;
     width: 100%;
