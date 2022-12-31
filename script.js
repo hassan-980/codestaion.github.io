@@ -55,5 +55,3 @@ closeBtn.addEventListener("click", () => {
 });
 
 
-
-
